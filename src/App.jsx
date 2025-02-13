@@ -38,8 +38,8 @@ function App() {
       description:
         "A responsive job listing platform with clean UI using Tailwind CSS and seamless navigation implemented using React Router.",
       tech: ["React Router", "Tailwind CSS"],
-      github: "https://github.com/babaj301/react-j",
-      live: "https://react-jobbs.netlify.app/s",
+      github: "https://github.com/babaj301/react-jobs",
+      live: "https://react-jobbs.netlify.app/",
     },
   ];
 
