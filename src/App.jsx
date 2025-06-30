@@ -26,7 +26,7 @@ function App() {
       live: "https://taskrrrr.netlify.app/",
     },
     {
-      title: "E-commerce Site",
+      title: "Rayna E-commerce",
       description:
         "An e-commerce platform with dynamic cart functionality, email login and optimized performance using React Context API.",
       tech: ["React", "Context API", "Lazy Loading"],
@@ -34,7 +34,7 @@ function App() {
       live: "https://rayna-ecommerce.netlify.app/",
     },
     {
-      title: "Job Site",
+      title: "React Jobs",
       description:
         "A responsive job listing platform with clean UI using Tailwind CSS and seamless navigation implemented using React Router.",
       tech: ["React Router", "Tailwind CSS"],
