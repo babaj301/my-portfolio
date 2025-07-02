@@ -18,14 +18,6 @@ function App() {
   ];
 
   const projects = [
-
-    {
-      title: "FindTrend",
-      description:"A landing page for a social media platform for sharing and discovering trends. Built with React.js, it features a responsive design",
-      tech: ["React", "Tailwind CSS", ],
-      github: "https://github.com/babaj301/FindTrend-landing-page",
-      live:"https://findtrend-copy.netlify.app/",
-    }
     {
       title: "TaskMinder",
       description:
@@ -33,6 +25,14 @@ function App() {
       tech: ["TypeScript", "Redux", "Firebase", "Tailwind CSS"],
       github: "https://github.com/babaj301/task-dashboard",
       live: "https://taskrrrr.netlify.app/",
+    },
+    {
+      title: "FindTrend",
+      description:
+        "A landing page for a social media platform for sharing and discovering trends. Built with React.js, it features a responsive design",
+      tech: ["React", "Tailwind CSS"],
+      github: "https://github.com/babaj301/FindTrend-landing-page",
+      live: "https://findtrend-copy.netlify.app/",
     },
     {
       title: "Rayna E-commerce",
