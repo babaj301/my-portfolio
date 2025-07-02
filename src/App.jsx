@@ -12,11 +12,20 @@ function App() {
     "TypeScript",
     "React",
     "Tailwind CSS",
+    "Next.js",
     "Git",
     "Firebase",
   ];
 
   const projects = [
+
+    {
+      title: "FindTrend",
+      description:"A landing page for a social media platform for sharing and discovering trends. Built with React.js, it features a responsive design",
+      tech: ["React", "Tailwind CSS", ],
+      github: "https://github.com/babaj301/FindTrend-landing-page",
+      live:"https://findtrend-copy.netlify.app/",
+    }
     {
       title: "TaskMinder",
       description:
