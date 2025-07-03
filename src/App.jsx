@@ -42,6 +42,14 @@ function App() {
       github: "https://github.com/babaj301/react-jobs",
       live: "https://react-jobbs.netlify.app/",
     },
+    {
+      title: "TaskMinder",
+      description:
+        "A sleek and responsive task management dashboard for tracking daily activities, built with React and Tailwind CSS. Features include task status updates, intuitive layout, and modern UI design.",
+      tech: ["React", "Tailwind CSS"],
+      github: "https://github.com/babaj301/task-dashboard",
+      live: "https://taskrrrr.netlify.app/",
+    },
   ];
 
   return (
