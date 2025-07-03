@@ -19,14 +19,6 @@ function App() {
 
   const projects = [
     {
-      title: "TaskMinder",
-      description:
-        "A full-featured task management application built with TypeScript and Redux. Features include CRUD operations, Firebase Authentication for Google Sign Up and Login, and Firestore integration.",
-      tech: ["TypeScript", "Redux", "Firebase", "Tailwind CSS"],
-      github: "https://github.com/babaj301/task-dashboard",
-      live: "https://taskrrrr.netlify.app/",
-    },
-    {
       title: "FindTrend",
       description:
         "A landing page for a social media platform for sharing and discovering trends. Built with React.js, it features a responsive design",
@@ -37,7 +29,7 @@ function App() {
     {
       title: "Rayna E-commerce",
       description:
-        "An e-commerce platform with dynamic cart functionality, email login and optimized performance using React Context API.",
+        "An e-commerce platform with dynamic cart functionality and optimized performance using React Context API and Redux",
       tech: ["React", "Context API", "Lazy Loading"],
       github: "https://github.com/babaj301/react-work-practice",
       live: "https://rayna-ecommerce.netlify.app/",
