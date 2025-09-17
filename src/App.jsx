@@ -28,14 +28,7 @@ function App() {
       github: "https://github.com/babaj301/chat-backend",
       live: "https://chat-frontend-ten-opal.vercel.app/rooms",
     },
-    {
-      title: "TaskMinder",
-      description:
-        "A full-featured task management application built with TypeScript and Redux. Features include CRUD operations, Firebase Authentication for Google Sign Up and Login, and Firestore integration.",
-      tech: ["TypeScript", "Redux", "Firebase", "Tailwind CSS"],
-      github: "https://github.com/babaj301/task-dashboard",
-      live: "https://taskrrrr.netlify.app/",
-    },
+
     {
       title: "CreoWis",
       description:
@@ -54,7 +47,16 @@ function App() {
     },
 
     {
-      title: "E-commerce Site",
+      title: "TaskMinder",
+      description:
+        "A full-featured task management application built with TypeScript, React, and Redux using Firebase Authentication.",
+      tech: ["TypeScript", "Redux", "Firebase", "Tailwind CSS"],
+      github: "https://github.com/babaj301/task-dashboard",
+      live: "https://taskrrrr.netlify.app/",
+    },
+
+    {
+      title: "Rayna E-Commerce",
       description:
         "An e-commerce platform with dynamic cart functionality and optimized performance using React Context API and Redux",
       tech: ["React", "Context API", "Lazy Loading"],
@@ -64,7 +66,7 @@ function App() {
     {
       title: "React Jobs",
       description:
-        "A responsive job listing platform with clean UI using Tailwind CSS and seamless navigation implemented using React Router.",
+        "A simple responsive job listing platform with clean UI using Tailwind CSS and seamless navigation implemented using React Router.",
       tech: ["React Router", "Tailwind CSS"],
       github: "https://github.com/babaj301/react-jobs",
       live: "https://react-jobbs.netlify.app/",

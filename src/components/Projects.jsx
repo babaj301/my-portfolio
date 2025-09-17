@@ -1,7 +1,7 @@
 import ProjectCard from "./ProjectCard";
 
 const Projects = ({ projects }) => (
-  <section className="py-20 bg-white">
+  <section id="projects" className="py-20 bg-white">
     <div className="container mx-auto px-6">
       <h2 className="text-3xl font-bold mb-12 text-center">
         Featured Projects
