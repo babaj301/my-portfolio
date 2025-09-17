@@ -45,6 +45,15 @@ function App() {
       live: "https://creowis-landing.vercel.app/",
     },
     {
+      title: "FindTrend",
+      description:
+        "A responsive landing page for a social media platform using Next.js, and Framer Motion for animations. Built with TypeScript and Tailwind CSS for styling.",
+      tech: ["Next.js", "TypeScript", "Tailwind CSS", "Framer Motion"],
+      github: "https://github.com/babaj301/FindTrend-landing-page",
+      live: "https://findtrend-copy.netlify.app/",
+    },
+
+    {
       title: "E-commerce Site",
       description:
         "An e-commerce platform with dynamic cart functionality and optimized performance using React Context API and Redux",
@@ -59,14 +68,6 @@ function App() {
       tech: ["React Router", "Tailwind CSS"],
       github: "https://github.com/babaj301/react-jobs",
       live: "https://react-jobbs.netlify.app/",
-    },
-    {
-      title: "TaskMinder",
-      description:
-        "A sleek and responsive task management dashboard for tracking daily activities, built with React and Tailwind CSS. Features include task status updates, intuitive layout, and modern UI design.",
-      tech: ["React", "Tailwind CSS"],
-      github: "https://github.com/babaj301/task-dashboard",
-      live: "https://taskrrrr.netlify.app/",
     },
   ];
 
