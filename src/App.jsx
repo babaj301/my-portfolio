@@ -14,6 +14,7 @@ function App() {
     "JavaScript",
     "TypeScript",
     "Tailwind CSS",
+    "Next.js",
     "Git",
     "Firebase",
   ];
@@ -46,18 +47,26 @@ function App() {
     {
       title: "E-commerce Site",
       description:
-        "An e-commerce platform with dynamic cart functionality, email login and optimized performance using React Context API.",
+        "An e-commerce platform with dynamic cart functionality and optimized performance using React Context API and Redux",
       tech: ["React", "Context API", "Lazy Loading"],
       github: "https://github.com/babaj301/react-work-practice",
       live: "https://rayna-ecommerce.netlify.app/",
     },
     {
-      title: "Job Site",
+      title: "React Jobs",
       description:
         "A responsive job listing platform with clean UI using Tailwind CSS and seamless navigation implemented using React Router.",
       tech: ["React Router", "Tailwind CSS"],
       github: "https://github.com/babaj301/react-jobs",
       live: "https://react-jobbs.netlify.app/",
+    },
+    {
+      title: "TaskMinder",
+      description:
+        "A sleek and responsive task management dashboard for tracking daily activities, built with React and Tailwind CSS. Features include task status updates, intuitive layout, and modern UI design.",
+      tech: ["React", "Tailwind CSS"],
+      github: "https://github.com/babaj301/task-dashboard",
+      live: "https://taskrrrr.netlify.app/",
     },
   ];
 

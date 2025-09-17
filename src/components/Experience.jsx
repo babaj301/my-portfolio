@@ -3,7 +3,7 @@ import ExperienceCard from "./ExperienceCard";
 const Experience = () => {
   const experiences = [
     {
-      role: "Frontend Developer Intern",
+      role: "Frontend Developer",
       company: "Crop2Cash",
       period: "2024 - Present",
       description:
