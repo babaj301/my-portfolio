@@ -58,7 +58,7 @@ export default function ProjectRow({ project, index }) {
         </div>
 
         <div className="flex-1 md:max-w-md hidden lg:block">
-          <p className="font-body text-sm opacity-70 group-hover:opacity-100 transition-opacity leading-relaxed">
+          <p className="font-body text-sm text-blackgroup-hover:opacity-100 transition-opacity leading-relaxed">
             {project.description}
           </p>
         </div>
