@@ -6,7 +6,7 @@ import Projects from './components/Projects';
 import Experience from './components/Experience';
 import Footer from './components/Footer';
 import creowis from './assets/creowis.webp';
-
+import { motion } from 'motion/react';
 // Unique fonts that break away from standard system fonts.
 // Oswald gives us that tall, athletic, bold look (perfect for the subtle sports hint).
 // Manrope provides extremely clean, geometric legibility for the details.
@@ -110,11 +110,16 @@ export default function App() {
   ];
 
   return (
-    <div className="min-h-screen bg-[#F2F2ED] text-[#111111] font-body overflow-hidden">
+    <div className="min-h-screen bg-[#F2F2ED] text-[#111111] font-body">
       <CustomStyles />
 
       {/* Shared Minimalist Navigation Menu */}
-      <nav className="fixed w-full z-50 mix-blend-difference text-[#F2F2ED] p-6 md:p-10 flex justify-between items-center pointer-events-none">
+      <motion.nav
+        initial={{ opacity: 0, y: -100 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 1.6, ease: 'easeInOut' }}
+        className="fixed w-full z-50 mix-blend-difference text-[#F2F2ED] p-6 md:p-10 flex justify-between items-center pointer-events-none"
+      >
         <div className="font-display text-xl tracking-wide pointer-events-auto select-none">
           B.O.
         </div>
@@ -127,7 +132,7 @@ export default function App() {
           <div className="w-6 h-[2px] bg-current transition-all group-hover:w-4"></div>
           <div className="w-4 h-[2px] bg-current transition-all group-hover:w-2"></div>
         </button>
-      </nav>
+      </motion.nav>
 
       {/* Full-screen Menu Overlay */}
       <div
@@ -143,34 +148,46 @@ export default function App() {
           </button>
         </div>
         <div className="flex flex-col space-y-4 text-left font-display text-5xl md:text-8xl tracking-tight">
-          <a
+          <motion.a
+            initial={{ opacity: 0, y: -100 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.05, duration: 0.5, ease: 'easeOut' }}
             href="#about"
             onClick={toggleMenu}
             className="hover:text-[#F96A00] hover:translate-x-4 transition-all"
           >
             01. ABOUT
-          </a>
-          <a
+          </motion.a>
+          <motion.a
+            initial={{ opacity: 0, y: -100 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.1, duration: 0.5, ease: 'easeOut' }}
             href="#work"
             onClick={toggleMenu}
             className="hover:text-[#F96A00] hover:translate-x-4 transition-all"
           >
             02. WORK
-          </a>
-          <a
+          </motion.a>
+          <motion.a
+            initial={{ opacity: 0, y: -100 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.15, duration: 0.5, ease: 'easeOut' }}
             href="#experience"
             onClick={toggleMenu}
             className="hover:text-[#F96A00] hover:translate-x-4 transition-all"
           >
             03. EXPERIENCE
-          </a>
-          <a
+          </motion.a>
+          <motion.a
+            initial={{ opacity: 0, y: -100 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.2, duration: 0.5, ease: 'easeOut' }}
             href="#contact"
             onClick={toggleMenu}
             className="hover:text-[#F96A00] hover:translate-x-4 transition-all"
           >
             04. CONTACT
-          </a>
+          </motion.a>
         </div>
       </div>
       <Hero />

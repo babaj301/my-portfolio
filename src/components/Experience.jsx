@@ -1,8 +1,17 @@
+import { motion } from 'motion/react';
+
 export default function Experience() {
+  const fadeUp = {
+    initial: { opacity: 0, x: 60 },
+    whileInView: { opacity: 1, x: 0 },
+    viewport: { once: true, amount: 0.3 },
+    transition: { duration: 0.6, ease: 'easeOut' },
+  };
+
   return (
     <section
       id="experience"
-      className="py-32 px-6 md:px-10 bg-[#111111] text-[#F2F2ED] border-t border-[#F2F2ED]/10"
+      className="py-32 px-6 md:px-10 bg-[#111111] text-[#F2F2ED] border-t border-[#F2F2ED]/10 relative z-10"
     >
       <div className="max-w-[1600px] mx-auto">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-16 md:gap-24">
@@ -19,7 +28,10 @@ export default function Experience() {
 
           <div className="lg:col-span-8 space-y-16">
             {/* Crop2Cash Experience */}
-            <div className="border-b border-[#F2F2ED]/10 pb-12">
+            <motion.div
+              {...fadeUp}
+              className="border-b border-[#F2F2ED]/10 pb-12"
+            >
               <div className="flex flex-col md:flex-row md:items-baseline justify-between gap-2 mb-6">
                 <div>
                   <h3 className="font-display text-2xl md:text-3xl tracking-wide text-[#F2F2ED]">
@@ -74,10 +86,13 @@ export default function Experience() {
                   </span>
                 ))}
               </div>
-            </div>
+            </motion.div>
 
             {/* Freelance Experience */}
-            <div className="border-b border-[#F2F2ED]/10 pb-12">
+            <motion.div
+              {...fadeUp}
+              className="border-b border-[#F2F2ED]/10 pb-12"
+            >
               <div className="flex flex-col md:flex-row md:items-baseline justify-between gap-2 mb-6">
                 <div>
                   <h3 className="font-display text-2xl md:text-3xl tracking-wide text-[#F2F2ED]">
@@ -129,10 +144,10 @@ export default function Experience() {
                   </span>
                 ))}
               </div>
-            </div>
+            </motion.div>
 
             {/* Education section embedded into flow */}
-            <div>
+            <motion.div {...fadeUp}>
               <h4 className="font-display text-xl tracking-wider text-gray-400 mb-4">
                 EDUCATION / CREDENTIALS
               </h4>
@@ -162,7 +177,7 @@ export default function Experience() {
                   JAN 2026 — JAN 2027
                 </span>
               </div>
-            </div>
+            </motion.div>
           </div>
         </div>
       </div>

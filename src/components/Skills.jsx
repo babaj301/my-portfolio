@@ -1,3 +1,49 @@
+import { motion } from 'motion/react';
+
+// Reusable component that splits text into words and animates them in, one by one
+function AnimatedText({ text, className = '', as = 'p', triggerOnce = true }) {
+  const words = text.split(' ');
+  const Wrapper = motion[as];
+
+  const container = {
+    hidden: {},
+    show: {
+      transition: {
+        staggerChildren: 0.03,
+      },
+    },
+  };
+
+  const word = {
+    hidden: { opacity: 0, y: 20 },
+    show: {
+      opacity: 1,
+      y: 0,
+      transition: { duration: 0.5, ease: 'easeOut' },
+    },
+  };
+
+  return (
+    <Wrapper
+      variants={container}
+      initial="hidden"
+      whileInView="show"
+      viewport={{ once: triggerOnce, amount: 0.4 }}
+      className={className}
+    >
+      {words.map((w, i) => (
+        <motion.span
+          key={i}
+          variants={word}
+          className="inline-block mr-[0.25em]"
+        >
+          {w}
+        </motion.span>
+      ))}
+    </Wrapper>
+  );
+}
+
 export default function Skills({ skills }) {
   // Let's divide your true technical competencies into category columns for that beautiful editorial layout
   const coreCompetencies = skills.filter((s) =>
@@ -20,7 +66,7 @@ export default function Skills({ skills }) {
   return (
     <section
       id="about"
-      className="py-32 px-6 md:px-10 bg-[#111111] text-[#F2F2ED]"
+      className="relative z-10 py-32 px-6 md:px-10 bg-[#111111] text-[#F2F2ED]"
     >
       <div className="max-w-[1600px] mx-auto">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-16 md:gap-24">
@@ -58,13 +104,17 @@ export default function Skills({ skills }) {
               bridge the gap between complex engineering problems and seamless
               user interfaces.
             </p>
+
             <p className="text-gray-400">
-              Whether it's building a robust component library from scratch or
-              fine-tuning the performance of a fullstack application, I approach
-              code with the same discipline required on the court:{' '}
-              <strong className="text-[#F2F2ED] font-normal">
-                preparation, execution, and follow-through.
-              </strong>
+              <AnimatedText
+                as="span"
+                text="Whether it's building a robust component library from scratch or fine-tuning the performance of a fullstack application, I approach code with the same discipline required on the court:"
+              />
+              <AnimatedText
+                as="span"
+                text="preparation, execution, and follow-through."
+                className="text-[#F2F2ED] font-normal"
+              />
             </p>
 
             <div className="mt-20 grid grid-cols-1 sm:grid-cols-3 gap-8 border-t border-[#F2F2ED]/20 pt-12">

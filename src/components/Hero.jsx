@@ -1,9 +1,16 @@
+import { motion } from 'motion/react';
 export default function Hero() {
   return (
-    <section className="relative min-h-screen w-full flex flex-col justify-end pb-12 md:pb-24 px-6 md:px-10">
+    <section className="min-h-screen w-full flex flex-col justify-end pb-12 md:pb-24 px-6 md:px-10 sticky top-0 z-0">
+      {' '}
       {/* The Basketball Hint: Abstract Court Lines */}
       {/* These lines subtly mimic the center line, key circle, and arcs of a basketball court */}
-      <div className="absolute inset-0 pointer-events-none overflow-hidden flex items-center justify-center opacity-10">
+      <motion.div
+        initial={{ opacity: 0, scale: 0.5 }}
+        animate={{ opacity: 1, scale: 1 }}
+        transition={{ duration: 0.7, ease: 'easeInOut' }}
+        className="absolute inset-0 pointer-events-none overflow-hidden flex items-center justify-center opacity-10"
+      >
         <svg
           viewBox="0 0 1000 1000"
           preserveAspectRatio="xMidYMid meet"
@@ -18,11 +25,10 @@ export default function Hero() {
             cx="500"
             cy="500"
             r="12"
-            className="fill-[#F96A00] stroke-none animate-pulse"
+            className="fill-[#F96A00] stroke-none"
           />
         </svg>
-      </div>
-
+      </motion.div>
       <div className="relative z-10 w-full max-w-[1600px] mx-auto flex flex-col md:flex-row md:items-end justify-between gap-12">
         <div className="flex-1">
           <div className="flex items-center gap-4 mb-6 md:mb-12">
@@ -32,14 +38,24 @@ export default function Hero() {
             </p>
           </div>
 
-          <h1 className="font-display text-[14vw] md:text-[10vw] leading-[0.85] tracking-tight mb-1 text-[#111111]">
+          <motion.h1
+            initial={{ x: -50, opacity: 0 }}
+            animate={{ x: 0, opacity: 1 }}
+            transition={{ duration: 1.8, ease: 'easeInOut' }}
+            className="font-display text-[14vw] md:text-[10vw] leading-[0.85] tracking-tight mb-1 text-[#111111]"
+          >
             BABAJIDE
             <br />
             OLUWAFERANMI
-          </h1>
+          </motion.h1>
         </div>
 
-        <div className="md:w-1/4 pb-2 md:pb-6">
+        <motion.div
+          initial={{ x: 50, opacity: 0 }}
+          animate={{ x: 0, opacity: 1 }}
+          transition={{ duration: 2, ease: 'easeInOut' }}
+          className="md:w-1/4 pb-2 md:pb-6"
+        >
           <p className="font-body text-sm md:text-base leading-relaxed text-gray-600 font-medium">
             Crafting high-performance web experiences. Focused on pixel-perfect
             execution, clean architecture, and smooth interactions.
@@ -47,7 +63,7 @@ export default function Hero() {
               Nothing but net.
             </span>
           </p>
-        </div>
+        </motion.div>
       </div>
     </section>
   );
