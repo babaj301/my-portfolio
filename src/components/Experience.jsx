@@ -1,57 +1,151 @@
-import ExperienceCard from "./ExperienceCard";
-
-const Experience = () => {
-  const experiences = [
-    {
-      role: "Frontend Developer",
-      company: "Crop2Cash",
-      period: "2024 - Present",
-      description:
-        "Working as part of the development team to build and maintain modern web applications, focusing on React-based solutions and responsive design implementations.",
-      achievements: [
-        "Worked on building and optimizing React applications, resulting in a 25% improvement in load times",
-        "Collaborated with a team of 5 developers to implement new features and debug issues",
-        "Utilized Git and GitHub for version control and collaborative development",
-        "Implemented responsive designs using Tailwind CSS, ensuring mobile-first approach",
-        "Participated in code reviews and provided constructive feedback to team members",
-        "Assisted in the migration of legacy code to modern React practices and TypeScript",
-      ],
-    },
-    {
-      role: "Freelance Web Developer",
-      company: "Self-Employed",
-      period: "2023 - 2024",
-      description:
-        "Worked with various clients to deliver custom web solutions and applications.",
-      achievements: [
-        "Developed and maintained websites for 5+ clients using React and modern web technologies",
-        "Created responsive and accessible user interfaces using Tailwind CSS",
-        "Implemented state management solutions using Redux and Context API",
-        "Integrated third-party APIs and services into client applications",
-        "Provided technical consultation and solutions architecture for client projects",
-      ],
-    },
-  ];
-
+export default function Experience() {
   return (
-    <section className="py-20 bg-gray-50">
-      <div className="container mx-auto px-6">
-        <h2 className="text-3xl font-bold mb-12 text-center">Experience</h2>
-        <div className="max-w-4xl mx-auto space-y-8">
-          {experiences.map((experience, index) => (
-            <ExperienceCard key={index} {...experience} />
-          ))}
+    <section
+      id="experience"
+      className="py-32 px-6 md:px-10 bg-[#111111] text-[#F2F2ED] border-t border-[#F2F2ED]/10"
+    >
+      <div className="max-w-[1600px] mx-auto">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-16 md:gap-24">
+          <div className="lg:col-span-4 flex flex-col justify-between">
+            <div>
+              <span className="font-display text-8xl md:text-[10rem] leading-none text-[#F2F2ED]/10 block -ml-2 select-none">
+                03
+              </span>
+              <h2 className="font-display text-4xl md:text-6xl tracking-wide mt-[-2rem] relative z-10">
+                EXPERIENCE
+              </h2>
+            </div>
+          </div>
 
-          <div className="bg-blue-50 rounded-xl p-8 border border-blue-100">
-            <h3 className="text-xl font-bold text-blue-900 mb-4">Education</h3>
-            <div className="flex flex-col md:flex-row md:items-center md:justify-between">
-              <div>
-                <p className="font-medium text-gray-800">
-                  B.A. in Political Science
-                </p>
-                <p className="text-gray-600">
-                  Specialized in Public Policy and Administration
-                </p>
+          <div className="lg:col-span-8 space-y-16">
+            {/* Crop2Cash Experience */}
+            <div className="border-b border-[#F2F2ED]/10 pb-12">
+              <div className="flex flex-col md:flex-row md:items-baseline justify-between gap-2 mb-6">
+                <div>
+                  <h3 className="font-display text-2xl md:text-3xl tracking-wide text-[#F2F2ED]">
+                    Frontend Developer
+                  </h3>
+                  <p className="text-[#F96A00] font-medium tracking-wide text-sm md:text-base uppercase">
+                    CROP2CASH • Ibadan, Nigeria
+                  </p>
+                </div>
+                <span className="font-body text-xs md:text-sm text-gray-400 tracking-wider">
+                  JULY 2024 — JANUARY 2026
+                </span>
+              </div>
+              <ul className="space-y-4 text-gray-300 text-base md:text-lg font-light leading-relaxed mb-6">
+                <li>
+                  • Led the development of an internal Farm Management
+                  Information System using React.js and TailwindCSS, improving
+                  internal navigation by 40% and communication with farmers by
+                  300%.
+                </li>
+                <li>
+                  • Designed and implemented the product catalogue flow for
+                  adding stock and managing product details, reducing manual
+                  input errors by over 30%.
+                </li>
+                <li>
+                  • Collaborated with senior engineers to build the orders page
+                  and implement Role-Based Access Control (RBAC), reducing
+                  unauthorized access vulnerabilities by over 50%.
+                </li>
+                <li>
+                  • Engineered and validated the invite teammate gateway using
+                  Yup validation architectures, preventing layout failures and
+                  reducing teammate registration drop-offs by 25%.
+                </li>
+              </ul>
+              <div className="flex flex-wrap gap-2">
+                {[
+                  'React.js',
+                  'Next.js',
+                  'TypeScript',
+                  'Redux',
+                  'Tailwind CSS',
+                  'Bootstrap',
+                  'HTML/CSS',
+                ].map((tech) => (
+                  <span
+                    key={tech}
+                    className="bg-[#222222] text-gray-300 text-xs px-3 py-1 rounded-sm tracking-wider font-mono"
+                  >
+                    {tech}
+                  </span>
+                ))}
+              </div>
+            </div>
+
+            {/* Freelance Experience */}
+            <div className="border-b border-[#F2F2ED]/10 pb-12">
+              <div className="flex flex-col md:flex-row md:items-baseline justify-between gap-2 mb-6">
+                <div>
+                  <h3 className="font-display text-2xl md:text-3xl tracking-wide text-[#F2F2ED]">
+                    Fullstack Developer
+                  </h3>
+                  <p className="text-[#F96A00] font-medium tracking-wide text-sm md:text-base uppercase">
+                    Freelance • Remote
+                  </p>
+                </div>
+                <span className="font-body text-xs md:text-sm text-gray-400 tracking-wider">
+                  JANUARY 2023 — JULY 2024
+                </span>
+              </div>
+              <ul className="space-y-4 text-gray-300 text-base md:text-lg font-light leading-relaxed mb-6">
+                <li>
+                  • Developed Rayna E-Commerce: Engineered a bespoke storefront
+                  utilizing React and Redux architectures alongside Firebase
+                  backend integration for frictionless product discovery.
+                </li>
+                <li>
+                  • Crafted CreoWis: Designed a modern responsive SaaS homepage
+                  utilizing Next.js, implementing complex Framer Motion
+                  interactions that increased mobile engagement metrics by 40%.
+                </li>
+                <li>
+                  • Managed end-to-end Figma-to-Code lifecycles, mapping project
+                  wireframes into production environments on Vercel and Netlify
+                  for multiple regional clients.
+                </li>
+              </ul>
+              <div className="flex flex-wrap gap-2">
+                {[
+                  'React.js',
+                  'Next.js',
+                  'TypeScript',
+                  'Redux',
+                  'Tailwind CSS',
+                  'Firebase',
+                  'Framer Motion',
+                  'Vercel',
+                ].map((tech) => (
+                  <span
+                    key={tech}
+                    className="bg-[#222222] text-gray-300 text-xs px-3 py-1 rounded-sm tracking-wider font-mono"
+                  >
+                    {tech}
+                  </span>
+                ))}
+              </div>
+            </div>
+
+            {/* Education section embedded into flow */}
+            <div>
+              <h4 className="font-display text-xl tracking-wider text-gray-400 mb-4">
+                EDUCATION / CREDENTIALS
+              </h4>
+              <div className="flex flex-col md:flex-row justify-between md:items-center">
+                <div>
+                  <p className="font-body text-lg font-medium text-[#F2F2ED]">
+                    The University of Ibadan
+                  </p>
+                  <p className="text-gray-400 text-sm">
+                    BSc, Political Science
+                  </p>
+                </div>
+                <span className="font-body text-xs md:text-sm text-gray-400 tracking-wider mt-1 md:mt-0">
+                  MAY 2018 — JUNE 2024
+                </span>
               </div>
             </div>
           </div>
@@ -59,6 +153,4 @@ const Experience = () => {
       </div>
     </section>
   );
-};
-
-export default Experience;
+}
