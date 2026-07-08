@@ -5,6 +5,7 @@ import Skills from './components/Skills';
 import Projects from './components/Projects';
 import Experience from './components/Experience';
 import Footer from './components/Footer';
+import creowis from './assets/creowis.webp';
 
 // Unique fonts that break away from standard system fonts.
 // Oswald gives us that tall, athletic, bold look (perfect for the subtle sports hint).
@@ -54,13 +55,16 @@ export default function App() {
     'Next.js',
     'Express.js',
     'Prisma',
+    'Postgres',
+    'Redis',
+    'MongoDB',
+    'GraphQL',
     'JavaScript',
     'TypeScript',
     'Tailwind CSS',
     'Git',
     'Firebase',
     'Framer Motion',
-    'Bootstrap',
   ];
 
   const projects = [
@@ -81,30 +85,28 @@ export default function App() {
       tech: ['Next.js', 'TypeScript', 'Tailwind CSS', 'Framer Motion'],
       github: 'https://github.com/babaj301/creowis-landing',
       live: 'https://creowis-landing.vercel.app/',
-      image:
-        'https://images.unsplash.com/photo-1618005198143-e52834644027?q=80&w=2564&auto=format&fit=crop',
+      image: creowis,
     },
-    {
-      title: 'FindTrend',
-      description:
-        'A responsive landing page for a social media platform using Next.js, and Framer Motion for animations. Built with TypeScript and Tailwind CSS for styling.',
-      tech: ['Next.js', 'TypeScript', 'Tailwind CSS', 'Framer Motion'],
-      github: 'https://github.com/babaj301/FindTrend-landing-page',
-      live: 'https://findtrend-copy.netlify.app/',
-      image:
-        'https://images.unsplash.com/photo-1550745165-9bc0b252726f?q=80&w=2070&auto=format&fit=crop',
-    },
-    {
-      title: 'TaskMinder',
-      description:
-        'A full-featured task management application built with TypeScript, React, and Redux using Firebase Authentication.',
-      tech: ['TypeScript', 'Redux', 'Firebase', 'Tailwind CSS'],
-      github: 'https://github.com/babaj301/task-dashboard',
-      live: 'https://taskrrrr.netlify.app/',
-      image:
-        'https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?q=80&w=2055&auto=format&fit=crop',
-    },
-    
+    // {
+    //   title: 'FindTrend',
+    //   description:
+    //     'A responsive landing page for a social media platform using Next.js, and Framer Motion for animations. Built with TypeScript and Tailwind CSS for styling.',
+    //   tech: ['Next.js', 'TypeScript', 'Tailwind CSS', 'Framer Motion'],
+    //   github: 'https://github.com/babaj301/FindTrend-landing-page',
+    //   live: 'https://findtrend-copy.netlify.app/',
+    //   image:
+    //     'https://images.unsplash.com/photo-1550745165-9bc0b252726f?q=80&w=2070&auto=format&fit=crop',
+    // },
+    // {
+    //   title: 'TaskMinder',
+    //   description:
+    //     'A full-featured task management application built with TypeScript, React, and Redux using Firebase Authentication.',
+    //   tech: ['TypeScript', 'Redux', 'Firebase', 'Tailwind CSS'],
+    //   github: 'https://github.com/babaj301/task-dashboard',
+    //   live: 'https://taskrrrr.netlify.app/',
+    //   image:
+    //     'https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?q=80&w=2055&auto=format&fit=crop',
+    // },
   ];
 
   return (
@@ -118,11 +120,12 @@ export default function App() {
         </div>
         <button
           onClick={toggleMenu}
-          className="pointer-events-auto flex flex-col gap-[6px] group focus:outline-none"
+          className={`pointer-events-auto cursor-pointer gap-[6px] group focus:outline-none ${isMenuOpen ? 'hidden' : 'flex flex-col'}`}
           aria-label="Toggle Menu"
         >
-          <div className="w-8 h-[2px] bg-current transition-all group-hover:w-6"></div>
-          <div className="w-8 h-[2px] bg-current transition-all group-hover:w-4"></div>
+          <div className="w-6 h-[2px] bg-current transition-all group-"></div>
+          <div className="w-6 h-[2px] bg-current transition-all group-hover:w-4"></div>
+          <div className="w-4 h-[2px] bg-current transition-all group-hover:w-2"></div>
         </button>
       </nav>
 

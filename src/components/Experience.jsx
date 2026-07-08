@@ -9,7 +9,7 @@ export default function Experience() {
           <div className="lg:col-span-4 flex flex-col justify-between">
             <div>
               <span className="font-display text-8xl md:text-[10rem] leading-none text-[#F2F2ED]/10 block -ml-2 select-none">
-                03
+                02
               </span>
               <h2 className="font-display text-4xl md:text-6xl tracking-wide mt-[-2rem] relative z-10">
                 EXPERIENCE
@@ -81,7 +81,7 @@ export default function Experience() {
               <div className="flex flex-col md:flex-row md:items-baseline justify-between gap-2 mb-6">
                 <div>
                   <h3 className="font-display text-2xl md:text-3xl tracking-wide text-[#F2F2ED]">
-                    Fullstack Developer
+                    Frontend Developer
                   </h3>
                   <p className="text-[#F96A00] font-medium tracking-wide text-sm md:text-base uppercase">
                     Freelance • Remote
@@ -93,14 +93,16 @@ export default function Experience() {
               </div>
               <ul className="space-y-4 text-gray-300 text-base md:text-lg font-light leading-relaxed mb-6">
                 <li>
-                  • Developed Rayna E-Commerce: Engineered a bespoke storefront
-                  utilizing React and Redux architectures alongside Firebase
-                  backend integration for frictionless product discovery.
+                  • Developed Rayna E-Commerce: Engineered a visually striking
+                  storefront utilizing React and Redux architectures alongside
+                  Firebase backend integration for frictionless product
+                  discovery.
                 </li>
                 <li>
-                  • Crafted CreoWis: Designed a modern responsive SaaS homepage
-                  utilizing Next.js, implementing complex Framer Motion
-                  interactions that increased mobile engagement metrics by 40%.
+                  • Crafted CreoWis, a modern responsive SaaS homepage for a
+                  note taking app utilizing Next.js, implementing complex Framer
+                  Motion interactions that increased mobile engagement metrics
+                  by 40%.
                 </li>
                 <li>
                   • Managed end-to-end Figma-to-Code lifecycles, mapping project
@@ -145,6 +147,19 @@ export default function Experience() {
                 </div>
                 <span className="font-body text-xs md:text-sm text-gray-400 tracking-wider mt-1 md:mt-0">
                   MAY 2018 — JUNE 2024
+                </span>
+              </div>
+              <div className="flex flex-col md:flex-row justify-between md:items-center">
+                <div>
+                  <p className="font-body text-lg font-medium text-[#F2F2ED]">
+                    FullstackOpen - University of Helsinki
+                  </p>
+                  <p className="text-gray-400 text-sm">
+                    Fullstack Web Development Certificate
+                  </p>
+                </div>
+                <span className="font-body text-xs md:text-sm text-gray-400 tracking-wider mt-1 md:mt-0">
+                  JAN 2026 — JAN 2027
                 </span>
               </div>
             </div>

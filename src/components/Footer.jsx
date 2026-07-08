@@ -53,10 +53,7 @@ export default function Footer() {
 
         <div className="flex flex-col md:flex-row justify-between items-center pt-8 border-t border-[#F2F2ED]/20 font-body text-sm text-gray-500">
           <p>© {new Date().getFullYear()} Babajide Oluwaferanmi.</p>
-          <div className="flex items-center gap-2 mt-4 md:mt-0">
-            <div className="w-2 h-2 rounded-full bg-[#F96A00]"></div>
-            <span>All systems operational</span>
-          </div>
+          <div className="flex items-center gap-2 mt-4 md:mt-0"></div>
         </div>
       </div>
     </footer>
