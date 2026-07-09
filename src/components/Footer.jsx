@@ -1,4 +1,4 @@
-import { LucideArrowUpRight } from 'lucide-react';
+import { LucideArrowUpRight, LucideGithub, LucideLinkedin } from 'lucide-react';
 
 export default function Footer() {
   return (
@@ -38,7 +38,8 @@ export default function Footer() {
               rel="noreferrer"
               className="text-xl hover:text-[#F96A00] transition-colors"
             >
-              GitHub ↗
+              GitHub
+              <LucideGithub size={24} className="inline-block ml-2" />
             </a>
             <a
               href="https://www.linkedin.com/in/babaj301/"
@@ -46,7 +47,8 @@ export default function Footer() {
               rel="noreferrer"
               className="text-xl hover:text-[#F96A00] transition-colors"
             >
-              LinkedIn ↗
+              <LucideLinkedin size={24} className="inline-block mr-2" />
+              LinkedIn
             </a>
           </div>
         </div>
