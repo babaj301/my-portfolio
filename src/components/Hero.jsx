@@ -9,7 +9,7 @@ export default function Hero() {
         initial={{ opacity: 0, scale: 0.5 }}
         animate={{ opacity: 1, scale: 1 }}
         transition={{ duration: 0.7, ease: 'easeInOut' }}
-        className="absolute inset-0 pointer-events-none overflow-hidden flex items-center justify-center opacity-10"
+        className="absolute inset-0 pointer-events-none overflow-hidden flex items-center justify-center"
       >
         <svg
           viewBox="0 0 1000 1000"
