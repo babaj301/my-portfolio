@@ -47,8 +47,9 @@ export default function Footer() {
               rel="noreferrer"
               className="text-xl hover:text-[#F96A00] transition-colors"
             >
-              <LucideLinkedin size={24} className="inline-block mr-2" />
+             
               LinkedIn
+               <LucideLinkedin size={24} className="inline-block mr-2" />
             </a>
           </div>
         </div>
