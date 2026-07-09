@@ -1,7 +1,7 @@
 import { motion } from 'motion/react';
 export default function Hero() {
   return (
-    <section className="min-h-screen w-full flex flex-col justify-end pb-12 md:pb-24 px-6 md:px-10 sticky top-0 z-0">
+    <section className="min-h-screen w-full flex flex-col justify-end pb-12 md:pb-24 px-6 md:px-10 ">
       {' '}
       {/* The Basketball Hint: Abstract Court Lines */}
       {/* These lines subtly mimic the center line, key circle, and arcs of a basketball court */}

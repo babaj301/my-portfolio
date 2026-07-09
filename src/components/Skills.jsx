@@ -66,7 +66,7 @@ export default function Skills({ skills }) {
   return (
     <section
       id="about"
-      className="relative z-10 py-32 px-6 md:px-10 bg-[#111111] text-[#F2F2ED]"
+      className="py-32 px-6 md:px-10 bg-[#111111] text-[#F2F2ED]"
     >
       <div className="max-w-[1600px] mx-auto">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-16 md:gap-24">

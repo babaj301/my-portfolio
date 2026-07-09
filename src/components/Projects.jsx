@@ -2,7 +2,7 @@ import ProjectRow from './ProjectRow';
 
 export default function Projects({ projects }) {
   return (
-    <section id="work" className="py-32 px-6 md:px-10 bg-[#F2F2ED] relative z-10">
+    <section id="work" className="py-32 px-6 md:px-10 bg-[#F2F2ED]">
       <div className="max-w-[1600px] mx-auto">
         <div className="flex items-baseline justify-between border-b-2 border-[#111111] pb-6 mb-16">
           <div className="relative">

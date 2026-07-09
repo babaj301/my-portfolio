@@ -4,7 +4,7 @@ export default function Footer() {
   return (
     <footer
       id="contact"
-      className="bg-[#111111] text-[#F2F2ED] pt-32 pb-10 px-6 md:px-10 relative z-10 overflow-hidden"
+      className="bg-[#111111] text-[#F2F2ED] pt-32 pb-10 px-6 md:px-1 overflow-hidden"
     >
       {/* Large Background Typography */}
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full text-center pointer-events-none opacity-5 select-none">
