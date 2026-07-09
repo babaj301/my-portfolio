@@ -26,6 +26,14 @@ const CustomStyles = () => (
     
     html {
       scroll-behavior: smooth;
+      overflow-x: hidden;
+      background-color: #F2F2ED;
+    }
+
+    body {
+      min-height: 100vh;
+      overflow-x: hidden;
+      background-color: #F2F2ED;
     }
 
     ::selection {
@@ -110,7 +118,7 @@ export default function App() {
   ];
 
   return (
-    <div className="min-h-screen bg-[#F2F2ED] text-[#111111] font-body">
+    <div className="min-h-screen bg-[#F2F2ED] text-[#111111] font-body overflow-x-hidden">
       <CustomStyles />
 
       {/* Shared Minimalist Navigation Menu */}
