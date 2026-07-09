@@ -118,7 +118,7 @@ export default function App() {
         initial={{ opacity: 0, y: -100 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 1.6, ease: 'easeInOut' }}
-        className="fixed w-full z-50 mix-blend-difference text-[#F2F2ED] p-6 md:p-10 flex justify-between items-center pointer-events-none"
+        className="fixed w-full z-50 mix-blend-difference text-[#F2F2ED] px-6 py-4 md:p-10 flex justify-between items-center pointer-events-none"
       >
         <div className="font-display text-xl tracking-wide pointer-events-auto select-none">
           B.O.
