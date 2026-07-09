@@ -7,9 +7,9 @@ export default function Hero() {
       {/* These lines subtly mimic the center line, key circle, and arcs of a basketball court */}
       <motion.div
         initial={{ opacity: 0, scale: 0.5 }}
-        animate={{ opacity: 1, scale: 1 }}
+        animate={{ opacity: 0.5, scale: 1 }}
         transition={{ duration: 0.7, ease: 'easeInOut' }}
-        className="absolute inset-0 pointer-events-none overflow-hidden flex items-center justify-center"
+        className="absolute inset-0 pointer-events-none overflow-hidden flex items-center justify-center opacity-10"
       >
         <svg
           viewBox="0 0 1000 1000"
