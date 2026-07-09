@@ -1,12 +1,12 @@
 import { motion } from 'motion/react';
 
 export default function Experience() {
-  const fadeUp = {
-    initial: { opacity: 0, x: 60 },
-    whileInView: { opacity: 1, x: 0 },
-    viewport: { once: true, amount: 0.3 },
-    transition: { duration: 0.5, ease: 'easeInOut' },
-  };
+const fadeUp = {
+  initial: { opacity: 0, x: 32 },
+  whileInView: { opacity: 1, x: 0 },
+  viewport: { once: true, amount: 0.3 },
+  transition: { duration: 0.9, ease: [0.16, 1, 0.3, 1] },
+};
 
   return (
     <section
