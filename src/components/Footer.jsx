@@ -49,7 +49,7 @@ export default function Footer() {
             >
              
               LinkedIn
-               <LucideLinkedin size={24} className="inline-block mr-2" />
+               <LucideLinkedin size={24} className="inline-block ml-2" />
             </a>
           </div>
         </div>
